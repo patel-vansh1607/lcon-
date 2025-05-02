@@ -32,7 +32,9 @@ useEffect(() => {
             <li>Group stage matches will be played for 15 minutes (full game duration).</li>
             <li>16 teams will participate, divided into 4 groups of 4 teams each.</li>
             <li>The top 2 teams from each group will qualify for the next stage.</li>
-            <li>All game schedules, stats, and scores will be updated on this app: <a href="https://play.google.com/store/apps/details?id=il.talent.winner&hl=en" target="_blank" rel="noopener noreferrer">Winner - Tournament Maker App</a>.</li>
+            <li>All game schedules, stats, and scores will be updated on this app: <a href="https://play.google.com/store/apps/details?id=il.talent.winner&hl=en" target="_blank" rel="noopener noreferrer">Winner - Tournament Maker App   </a>.<br></br></li>
+            <li>The app will determine the top 2 of each group <strong>automatically</strong></li>
+           
           </ul>
           <h2>2. Team Size</h2>
           <ul>
