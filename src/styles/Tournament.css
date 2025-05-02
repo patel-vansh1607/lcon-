@@ -82,6 +82,14 @@ body {
   color: #666;
   margin-top: 0.5rem;
 }
+
+.faded-line {
+  flex: 1;
+  height: 5px;
+  background: linear-gradient(to right, transparent, #f4c542, transparent);
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .main-div {
