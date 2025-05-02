@@ -19,7 +19,7 @@ useEffect(() => {
 }, [agreed])
   return (
     <>
-        <Navbar/>
+       {/*  <Navbar/> */}
       <div className="main-div">
         <h1 className="club-name">Leo Club of Nakuru</h1>
         <h2 className="presents">PRESENTS</h2>
