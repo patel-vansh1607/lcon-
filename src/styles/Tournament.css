@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff9e6;
+}
+
+/* MAIN SECTION */
+.main-div {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #fff3c4, #fff9e6, #f4c542, #ffe082);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #3b2f0b;
+  margin: 2rem;
+}
+
+.club-name {
+  font-size: 2.2rem;
+  color: #b88900;
+  font-weight: 600;
+}
+
+.presents {
+  font-size: 1rem;
+  color: #5f4b0b;
+  margin: 0.5rem 0;
+  letter-spacing: 2px;
+}
+
+.tournament-title {
+  font-size: 2.7rem;
+  color: #f4c542;
+  font-weight: bold;
+  text-shadow: 1px 1px #3b2f0b;
+  margin-bottom: 1.5rem;
+}
+
+/* RULES SECTION */
+.rules-section {
+  background-color: #fffdf4;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(184, 137, 0, 0.2);
+  text-align: left;
+}
+
+.rules-section h2 {
+  color: #b88900;
+  border-bottom: 2px solid #f4c542;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.rules-section ul {
+  padding-left: 1.5rem;
+  color: #5c4a1c;
+}
+
+.rules-section li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .main-div {
+    padding: 1.5rem 1rem;
+    margin: 1rem;
+  }
+
+  .club-name {
+    font-size: 1.5rem;
+  }
+
+  .tournament-title {
+    font-size: 2rem;
+  }
+
+  .rules-section {
+    padding: 1.5rem;
+  }
+}
