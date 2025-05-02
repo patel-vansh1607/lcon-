@@ -1,18 +1,21 @@
 import "../styles/Tournament.css";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { redirect } from "react-router-dom";
 
 const TournamentPage = () => {
     const [agreed, setAgreed] = useState(false);
-    const navigate = useNavigate();
   
     const handleContinue = () => {
       if (agreed) {
-        navigate("/register");
+        window.location.href="/register"
       } else {
         alert("Please agree to the terms to continue.");
       }
     };
+
+useEffect(() => {
+
+}, [agreed])
   return (
     <>
       <div className="main-div">
@@ -37,13 +40,12 @@ const TournamentPage = () => {
         <label className="checkbox-label">
             <input
             type="checkbox"
-            checked={agreed}
             onChange={() => setAgreed(!agreed)}
             />
             I have read and agree to the rules and regulations.
         </label>
-        <p className="continue-text" onClick={handleContinue}>
-            To continue with the registration, <span>click here</span>.
+        <p className="continue-text">
+            To continue with the registration, <button  onClick={handleContinue}>click here</button>.
         </p>
         </div>
       </div>
