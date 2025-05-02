@@ -68,6 +68,10 @@ body {
   margin-bottom: 0.6rem;
   line-height: 1.6;
 }
+.spot-red {
+  color: #FF0000;
+  font-weight: bolder;
+}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
