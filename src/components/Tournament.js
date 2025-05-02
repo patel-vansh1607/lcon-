@@ -34,7 +34,8 @@ useEffect(() => {
             <li>The top 2 teams from each group will qualify for the next stage.</li>
             <li>All game schedules, stats, and scores will be updated on this app: <a href="https://play.google.com/store/apps/details?id=il.talent.winner&hl=en" target="_blank" rel="noopener noreferrer">Winner - Tournament Maker App   </a>.<br></br></li>
             <li>The app will determine the top 2 of each group <strong>automatically</strong></li>
-           
+            <li>All Games will be played in <a href="https://www.google.com/maps/place/Nakuru+Athletics+Club/@-0.2911066,36.0655563,17z/data=!3m1!4b1!4m6!3m5!1s0x18298dc186ede701:0x42d8dd651d754c1a!8m2!3d-0.2911066!4d36.0655563!16s%2Fg%2F1ypmn2xrf?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Nakuru Athletics Club</a>.<br></br></li>
+            <li>All players will be provided with a Gate Pass to enter the ground which must be verified by <strong>security</strong> before entering</li>
           </ul>
           <h2>2. Team Size</h2>
           <ul>
