@@ -88,13 +88,25 @@ useEffect(() => {
             <ul>
               <li>They're nearer to the opponent's goal than both the ball and the second-last defender when the ball is played to them</li>
               <li>Offside = <strong>Indirect Free Kick</strong> to opponent.</li>
-
             </ul>
           </li>
         </ul>
+        <h2>6. Restarts & Ball Out of Play</h2>
+          <ul>
+            <li><strong>Kick-off:</strong> After goals or at the start of each half.</li>
+            <li><strong>Throw-in:</strong> Ball crosses touchline → last touched by opponent.</li>
+            <li><strong>Goal Kick:</strong> Opponent last touches ball over goal line, no goal scored.</li>
+            <li><strong>Corner Kick:</strong> Defender last touches ball over own goal line.</li>
+            <li><strong>Free Kick Types:</strong></li>     
+              <ul>
+                <li><strong>Direct:</strong>  Can score directly.</li>
+                <li><strong>In-Direct:</strong> Another player must touch before scoring.</li>
+              </ul> 
+            <li><strong>Penalty Kick:</strong> Awarded for fouls in the penalty area.</li>
+          </ul>
         </div>
         <div className="continue-section">
-        <label className="checkbox-label">
+        {/* <label className="checkbox-label">
             <input
             type="checkbox"
             onChange={() => setAgreed(!agreed)}
@@ -103,7 +115,7 @@ useEffect(() => {
         </label>
         <p className="continue-text">
             To continue with the registration, <button  onClick={handleContinue}>click here</button>.
-        </p>
+        </p> */}
         </div>
       </div>
     </>
