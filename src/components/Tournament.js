@@ -27,9 +27,12 @@ useEffect(() => {
 
         <div className="rules-section">
           <h2>📜 Rules & Regulations</h2><br></br>
-          <h2>1. Match Duration</h2>
+          <h2>1. Gameplay</h2>
           <ul>
-            <li>Group Stage matches be played for 15 minutes (full game).</li>
+            <li>Group stage matches will be played for 15 minutes (full game duration).</li>
+            <li>16 teams will participate, divided into 4 groups of 4 teams each.</li>
+            <li>The top 2 teams from each group will qualify for the next stage.</li>
+            <li>All game schedules, stats, and scores will be updated on this app: <a href="http://www.sui.com" target="_blank" rel="noopener noreferrer">www.sui.com</a>.</li>
           </ul>
           <h2>2. Team Size</h2>
           <ul>
@@ -104,6 +107,46 @@ useEffect(() => {
               </ul> 
             <li><strong>Penalty Kick:</strong> Awarded for fouls in the penalty area.</li>
           </ul>
+          <h2>7. Tie-Breaking Rules</h2>
+          <ul>
+            <li>TBD</li>
+          </ul>
+          <h2>8. Uniform</h2>
+        <ul>
+          <li>Team should have a matching T-shirt color code or Team Jersey</li>
+          <li>Short</li>
+          <li>Socks</li>
+        </ul>
+        <h2>9. Referee Authority</h2>
+        <ul>
+          <li>Referee’s decisions are <strong>FINAL</strong>.</li>
+          <li>Can stop, suspend, or abandon the game.</li>
+          <li>Can issue yellow/red cards <strong>before, during, or after</strong> the game.</li>
+        </ul>
+        <h2>10. Medical Rules</h2>
+        <ul>
+          <li>Any injured player must be assessed by the referee and medical personnel before continuing.</li>
+          <li>Head injuries will follow a mandatory concussion protocol — players must be cleared by medical staff before returning.</li>
+          <li>Bleeding players must leave the pitch and may only return once bleeding has stopped and the referee permits.</li>
+          <li>In case of serious injury, play will be stopped immediately and medical help will be called.</li>
+        </ul>
+        <div className="faded-line"></div>
+        <ul>
+          <li>All rules are designed to ensure player safety and sportsmanship throughout the tournament.</li>
+          <li>General respect toward everyone must be maintained at all times.</li>
+          <li>
+            If any rules are unclear,&nbsp;
+            <a
+              href="https://wa.me/254748660944"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#25D366", textDecoration: "underline" }}
+            >
+              contact the Organizer
+            </a>.
+          </li>
+        </ul>
+
         </div>
         <div className="continue-section">
         {/* <label className="checkbox-label">
