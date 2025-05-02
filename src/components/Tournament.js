@@ -1,6 +1,7 @@
 import "../styles/Tournament.css";
 import { useEffect, useState } from "react";
 import { redirect } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const TournamentPage = () => {
     const [agreed, setAgreed] = useState(false);
@@ -18,22 +19,22 @@ useEffect(() => {
 }, [agreed])
   return (
     <>
+        <Navbar/>
       <div className="main-div">
         <h1 className="club-name">Leo Club of Nakuru</h1>
         <h2 className="presents">PRESENTS</h2>
         <h1 className="tournament-title">FOOTBALL TOURNAMENT</h1>
 
         <div className="rules-section">
-          <h2>📜 Rules & Regulations</h2>
+          <h2>📜 Rules & Regulations</h2><br></br>
+          <h2>1. Match Duration</h2>
           <ul>
-            <li>Each team must consist of 10 players.</li>
-            <li>Players must be under 25 years of age.</li>
-            <li>Each player must carry a valid ID.</li>
-            <li>No aggressive behavior or foul play will be tolerated.</li>
-            <li>Referee decisions are final and must be respected.</li>
-            <li>Matches will be 30 minutes each (15 mins per half).</li>
-            <li>Late arrivals may lead to disqualification.</li>
-            <li>All team members must wear appropriate kits.</li>
+            <li>Group Stage matches be played for 15 minutes (full game).</li>
+          </ul>
+          <h2>2. Team Size</h2>
+          <ul>
+            <li>Games will be payed with 7 fielders during the game, with a max of 3 substitutes.</li>
+            <li>Teams can have a maximum and munimum of 10 players <span className="spot-red">no more no less</span></li>
           </ul>
         </div>
         <div className="continue-section">
