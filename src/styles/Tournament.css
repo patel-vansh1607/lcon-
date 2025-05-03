@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@font-face {
+  font-family: 'Sakana';
+  src: url(../fonts/Sakana.ttf);
+}
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -30,13 +34,17 @@ body {
 }
 
 .tournament-title {
+  font-family: 'Sakana', sans-serif;
   font-size: 2.7rem;
-  color: #f4c542;
+  color: #ffffff;
   font-weight: bold;
-  text-shadow: 1px 1px #3b2f0b;
   margin-bottom: 1.5rem;
+  text-shadow: 
+    -1px -1px 0 #00c7ec,  
+     1px -1px 0 #00c7ec,
+    -1px  1px 0 #00c7ec,
+     1px  1px 0 #00c7ec;
 }
-
 /* RULES SECTION */
 .rules-section {
   background-color: #fffdf4;
