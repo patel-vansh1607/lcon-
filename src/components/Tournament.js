@@ -152,7 +152,7 @@ useEffect(() => {
 
         </div>
         <div className="continue-section">
-        {/* <label className="checkbox-label">
+        <label className="checkbox-label">
             <input
             type="checkbox"
             onChange={() => setAgreed(!agreed)}
@@ -161,7 +161,7 @@ useEffect(() => {
         </label>
         <p className="continue-text">
             To continue with the registration, <button  onClick={handleContinue}>click here</button>.
-        </p> */}
+        </p>
         </div>
       </div>
     </>
