@@ -21,7 +21,7 @@ useEffect(() => {
     <>
        {/*  <Navbar/> */}
       <div className="main-div">
-        <h1 className="club-name">Leo Club of Nakuru</h1>
+        <h1 className="club-name">LEO CLUB OF NAKURU</h1>
         <h2 className="presents">PRESENTS</h2>
         <h1 className="tournament-title">FOOTBALL TOURNAMENT</h1>
 
