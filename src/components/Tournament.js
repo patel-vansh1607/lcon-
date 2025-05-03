@@ -1,7 +1,7 @@
 import "../styles/Tournament.css";
 import { useEffect, useState } from "react";
-import { redirect } from "react-router-dom";
-import Navbar from "./Navbar";
+import leologo from "../images/logo-02.png"
+import lionslogo from "../images/logo-03.png"
 
 const TournamentPage = () => {
     const [agreed, setAgreed] = useState(false);
@@ -21,8 +21,13 @@ useEffect(() => {
     <>
        {/*  <Navbar/> */}
       <div className="main-div">
-        <h1 className="club-name">LEO CLUB OF NAKURU <br></br> <span>PRESENTS</span></h1>
+        <div className="main">
+          <img className="img" src={leologo} alt="Leo Logo" />
+          <h1 className="club-name">LEO CLUB OF NAKURU <br></br> <span>PRESENTS</span></h1>
+          <img className="img" src={lionslogo} alt="Lions Logo" />
+        </div>
         <h1 className="tournament-title">SOCCER CUP <br></br> <span className="span2">Only One Crown. Who’s Got It?</span></h1>
+        
 
         <div className="rules-section">
           <h2>📜 Rules & Regulations</h2><br></br>

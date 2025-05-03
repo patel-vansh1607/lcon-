@@ -10,6 +10,22 @@ body {
 }
 
 /* MAIN SECTION */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  width: 100%;
+  gap: 20px;
+}
+
+.img {
+  width: 50px;
+  height: 50px; 
+  object-fit: contain;
+}
+
+
+
 .main-div {
   text-align: center;
   padding: 2rem 1rem;
