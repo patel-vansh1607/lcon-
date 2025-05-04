@@ -1,14 +1,23 @@
+/* Main title on team form */
+.main-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Player Form Card */
 .player-form {
   border: 2px solid #ddd;
   border-radius: 16px;
   padding: 2rem;
-  margin: 2rem 0;
+  margin: 2rem auto;
   background: linear-gradient(145deg, #ffffff, #f7f7f7);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  transition: all 0.3s ease;
 }
 
 .player-form:hover {
@@ -16,6 +25,7 @@
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
 }
 
+/* Header row */
 .player-header {
   display: flex;
   justify-content: space-between;
@@ -24,6 +34,7 @@
   flex-wrap: wrap;
 }
 
+/* Toggle open/close */
 .toggle-btn {
   background-color: #007bff;
   color: white;
@@ -40,6 +51,7 @@
   background-color: #0056b3;
 }
 
+/* Completion badge */
 .completed-badge {
   background-color: #28a745;
   color: white;
@@ -49,11 +61,36 @@
   font-weight: bold;
 }
 
+/* Avatar next to badge */
+.status-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007bff;
+}
+
+/* Input Fields */
 .form-fields {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   padding-top: 1rem;
+}
+
+.form-fields label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
 }
 
 .form-fields input[type="text"],
@@ -72,25 +109,33 @@
   outline: none;
 }
 
-.photo-label {
-  font-weight: 600;
+/* Submit button */
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 1rem 2rem;
   font-size: 1rem;
-  color: #333;
-  margin-top: 1rem;
-}
-
-/* Title styling */
-.player-form::before {
-  content: "⚽ Player Details";
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
   display: block;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  color: #2c3e50;
-  text-align: center;
+  margin: 2rem auto 1rem;
+  transition: background-color 0.3s ease;
 }
 
-/* Responsive layout */
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* Success message */
+.success-msg {
+  text-align: center;
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* RESPONSIVE */
 @media (max-width: 600px) {
   .player-form {
     padding: 1.2rem;
@@ -106,6 +151,11 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+  }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
   }
 
   .form-fields input {

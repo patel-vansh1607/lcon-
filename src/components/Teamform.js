@@ -4,9 +4,9 @@ import "../styles/Playerform.css"; // Ensure this is imported here too
 
 const TeamForm = () => {
   const [players, setPlayers] = useState(
-    Array(10).fill({ name: "", age: "", jersey: "", photo: null })
+    Array(10).fill({ name: "", age: "", jersey: "", photo: null, birthCert: null })
   );
-
+  
   const [openStates, setOpenStates] = useState(Array(10).fill(false));
   const [success, setSuccess] = useState(false);
 
@@ -28,9 +28,26 @@ const TeamForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+  
+    const isFormValid = players.every(
+      (player) =>
+        player.name.trim() &&
+        player.age &&
+        player.jersey &&
+        player.photo &&
+        player.birthCert
+    );
+  
+    if (!isFormValid) {
+      alert("⚠️ Please fill all fields and upload required files for every player before submitting.");
+      return;
+    }
+  
     setSuccess(true);
     console.log("Team Registered:", players);
   };
+  
+  
 
   return (
     <form className="team-form" onSubmit={handleSubmit}>
