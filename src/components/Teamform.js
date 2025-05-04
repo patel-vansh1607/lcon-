@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PlayerForm from "../components/Playerform";
+import "../styles/Playerform.css"; // Ensure this is imported here too
 
 const TeamForm = () => {
   const [players, setPlayers] = useState(
@@ -33,16 +34,19 @@ const TeamForm = () => {
 
   return (
     <form className="team-form" onSubmit={handleSubmit}>
-      {[...Array(10)].map((_, index) => (
+      <h2 className="main-title">🏆 Team Registration Form</h2>
+
+      {players.map((player, index) => (
         <PlayerForm
           key={index}
           playerNumber={index + 1}
-          playerData={players[index]}
+          playerData={player}
           handleChange={handleChange}
           isOpen={openStates[index]}
           toggleOpen={() => toggleOpen(index)}
         />
       ))}
+
       <button type="submit" className="submit-btn">Submit Team</button>
       {success && <p className="success-msg">✅ Team submitted successfully!</p>}
     </form>

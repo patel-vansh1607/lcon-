@@ -10,7 +10,7 @@ const PlayerForm = ({ playerNumber, playerData, handleChange, isOpen, toggleOpen
     <div className="player-form">
       <div className="player-header">
         <button type="button" onClick={toggleOpen} className="toggle-btn">
-          {isOpen ? "➖" : "➕"} Player {playerNumber}
+          {isOpen ? "➖" : "➕"} {playerData.name || `Player ${playerNumber}`}
         </button>
         {isCompleted && <span className="completed-badge">✅ Completed</span>}
       </div>
