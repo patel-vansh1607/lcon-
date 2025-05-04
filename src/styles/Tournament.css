@@ -201,6 +201,9 @@ a:hover {
 
 
 /* RESPONSIVE */
+@media (max-width: 375px) {
+  body{display: none;}
+}
 @media (max-width: 768px) {
   .main-div {
     padding: 1.5rem 1rem;
