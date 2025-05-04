@@ -1,10 +1,17 @@
-/* Navbar Container */
+@font-face {
+  font-family: 'HBold';
+  src: url(../fonts/HelveticaNeue\ Bold.ttf);
+}
+@font-face {
+  font-family: 'HReg';
+  src: url(../fonts/HelveticaNeueBlack.otf);
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 2rem;
-  background: linear-gradient(90deg, #007bff, #00c3ff);
+  background-color: #D4AF37;
   color: white;
   position: relative;
   z-index: 1000;
@@ -15,6 +22,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-family: 'HBold', sans-serif;
   
 }
 
@@ -22,6 +30,7 @@
 .desktop-links {
   display: flex;
   gap: 2rem;
+  font-family: 'HBold', sans-serif;
 }
 
 .desktop-links a {

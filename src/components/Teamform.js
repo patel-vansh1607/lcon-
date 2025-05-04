@@ -89,7 +89,7 @@ const TeamForm = () => {
         />
       ))}
 
-      <button type="submit" className="submit-btn">Submit Team</button>
+      <button type="submit" className="submit-btn">SUBMIT TEAM</button>
       {success && <p className="success-msg">✅ Team submitted successfully!</p>}
       <Footer />
     </form>

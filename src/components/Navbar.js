@@ -37,9 +37,8 @@ const Navbar = () => {
             exit="exit"
             transition={{ duration: 0.3 }}
           >
-            <a href="/">Home</a>
+            <a href="/">Rules</a>
             <a href="/register">Team Registration</a>
-            <a href="/rules">Rules</a>
             <a href="/contact">Contact</a>
           </motion.div>
         )}
