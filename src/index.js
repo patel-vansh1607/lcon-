@@ -19,10 +19,6 @@ const router =  createBrowserRouter([
     element: <TeamForm/>
   },
   {
-    path:"/rules",
-    element: <TournamentPage/>
-  },
-  {
     path:"/contact",
     element: <ContactPage/>
   }

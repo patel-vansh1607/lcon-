@@ -16,8 +16,7 @@ const Navbar = () => {
       <div className="navbar-logo"> Leo Club Of Nakuru</div>
 
       <div className="desktop-links">
-        <a href="/">Home</a>
-        <a href="/rules">Rules</a>
+        <a href="/">Rules</a>
         <a href="/register">Team Registration</a>
         <a href="/contact">Contact</a>
       </div>
