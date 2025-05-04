@@ -151,7 +151,7 @@ useEffect(() => {
               rel="noopener noreferrer"
               style={{ color: "#25D366", textDecoration: "underline" }}
             >
-              contact the Organizer
+              Contact the Organizer
             </a>.
           </li>
         </ul>
@@ -168,7 +168,7 @@ useEffect(() => {
 
         <p className="continue-text">
           To continue with the registration,
-          <button onClick={handleContinue} className="continue-button">CLICK HERE</button>.
+          <button onClick={handleContinue} className="continue-button">CLICK HERE</button>
         </p>
       </div>
 

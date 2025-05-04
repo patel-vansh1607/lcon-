@@ -3,6 +3,14 @@
   font-family: 'Sakana';
   src: url(../fonts/Sakana.ttf);
 }
+@font-face {
+  font-family: 'HBold';
+  src: url(../fonts/HelveticaNeue\ Bold.ttf);
+}
+@font-face {
+  font-family: 'HReg';
+  src: url(../fonts/HelveticaNeueBoldItalic.otf);
+}
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -43,6 +51,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-style: normal;
+  font-family: 'HBold', sans-serif;
 }
 .club-name span {
   font-size: 1.0rem;
@@ -51,6 +60,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-style: normal;
+  font-family: 'HBold', sans-serif;
 }
 
 .tournament-title {
@@ -90,11 +100,12 @@ body {
 }
 
 .rules-section h2 {
-  color: #b88900;
-  border-bottom: 2px solid #f4c542;
+  color: #333333;
+  border-bottom: 2px solid #333333;
   display: inline-block;
   padding-bottom: 0.4rem;
   margin-bottom: 1rem;
+  font-family: 'HBold', sans-serif;
 }
 
 .rules-section ul {
@@ -105,6 +116,7 @@ body {
 .rules-section li {
   margin-bottom: 0.6rem;
   line-height: 1.6;
+  font-family: 'HReg', sans-serif;
 }
 .spot-red {
   color: #FF0000;
@@ -144,12 +156,14 @@ body {
   gap: 10px;
   font-size: 16px;
   color: #333;
+  font-family: 'HBold', sans-serif;
 }
 
 .checkbox-label input {
   width: 18px;
   height: 18px;
   cursor: pointer;
+
 }
 
 .continue-text {
@@ -159,6 +173,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
+  font-family: 'HBold', sans-serif;
 }
 
 .continue-button {
@@ -170,6 +185,7 @@ body {
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: 'HBold', sans-serif;
 }
 
 .continue-button:hover {

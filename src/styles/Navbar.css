@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: 'HReg';
-  src: url(../fonts/HelveticaNeueBlack.otf);
+  src: url(../fonts/HelveticaNeueBoldItalic.otf);
 }
 .navbar {
   display: flex;
