@@ -28,7 +28,7 @@ useEffect(() => {
           <h1 className="club-name">LEO CLUB OF NAKURU <br></br> <span>PRESENTS</span></h1>
           <img className="img" src={lionslogo} alt="Lions Logo" />
         </div>
-        <h1 className="tournament-title">SOCCER CUP <br></br> <span className="span2">Only One Crown. Who’s Got It?</span></h1>
+        <h1 className="tournament-title">SOCCER CUP <br></br> <span className="span2">WHERE TALENT MEETS OPPORTUNITY</span></h1>
         
 
         <div className="rules-section">

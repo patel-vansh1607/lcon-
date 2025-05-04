@@ -202,8 +202,65 @@ a:hover {
 
 /* RESPONSIVE */
 @media (max-width: 375px) {
-  body{display: none;}
+
+  .main-div {
+    padding: 1rem;
+    margin: 3rem 0.5rem;
+  }
+
+  .club-name {
+    line-height: 25px;
+  }
+
+  .club-name span {
+    font-size: 0.7rem;
+  }
+
+  .tournament-title {
+    font-size: 2.0rem;
+    margin-top: 20px;
+    line-height: 50px;
+  }
+
+  .span2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .rules-section {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .rules-section h2 {
+    font-size: 1.1rem;
+  }
+
+  .continue-section {
+    padding: 1rem;
+    margin: 1rem;
+    gap: 15px;
+  }
+
+  .checkbox-label,
+  .continue-text {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .continue-button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .img {
+    width: 40px;
+    height: 40px;
+  }
 }
+
 @media (max-width: 768px) {
   .main-div {
     padding: 1.5rem 1rem;
