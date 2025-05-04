@@ -1,7 +1,5 @@
 import "../styles/MainPage.css"
-
 import React from "react";
-import "../styles/Home.css";
 import { motion } from "framer-motion";
 
 const activities = [
