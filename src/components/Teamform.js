@@ -27,7 +27,7 @@ const TeamForm = () => {
     setPlayers(updated);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
   
     const isFormValid = players.every(
@@ -45,7 +45,28 @@ const TeamForm = () => {
     }
   
     setSuccess(true);
-    console.log("Team Registered:", players);
+  
+    const formData = new FormData();
+    // Append players data
+    formData.append("players", JSON.stringify(players));
+  
+    // Append each player's files (photo and birth certificate)
+    players.forEach((player, index) => {
+      if (player.photo) formData.append("photo", player.photo);
+      if (player.birthCert) formData.append("birthCert", player.birthCert);
+    });
+  
+    try {
+      const response = await fetch("http://localhost:5000/register-team", {
+        method: "POST",
+        body: formData,
+      });
+  
+      const result = await response.json();
+      console.log(result); // Handle response from the backend
+    } catch (error) {
+      console.error("Error submitting team:", error);
+    }
   };
   
   
