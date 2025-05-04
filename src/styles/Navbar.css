@@ -1,70 +1,84 @@
+/* Navbar Container */
 .navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #f4c542;
-    padding: 1rem 2rem;
-    color: #3b2f0b;
-    font-family: 'Poppins', sans-serif;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar-logo {
-    font-weight: 600;
-    font-size: 1.3rem;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .nav-links a {
-    color: #3b2f0b;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .nav-links a:hover {
-    color: #fff;
-  }
-  
-  .hamburger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: linear-gradient(90deg, #007bff, #00c3ff);
+  color: white;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Desktop Links */
+.desktop-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.desktop-links a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.desktop-links a:hover {
+  color: #ffd700;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+/* Mobile Nav (Animated) */
+.mobile-links {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #007bff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.mobile-links a {
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.mobile-links a:hover {
+  color: #ffd700;
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 768px) {
+  .desktop-links {
     display: none;
-    flex-direction: column;
-    gap: 4px;
-    cursor: pointer;
   }
-  
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #3b2f0b;
-    border-radius: 2px;
+
+  .hamburger {
+    display: flex;
   }
-  
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      background: #ffe082;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      padding: 1rem;
-      width: 100%;
-    }
-  
-    .nav-links.open {
-      display: flex;
-    }
-  
-    .hamburger {
-      display: flex;
-    }
-  }
-  
+}

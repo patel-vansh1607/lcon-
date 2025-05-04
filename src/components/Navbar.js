@@ -1,23 +1,50 @@
 import { useState } from "react";
-import "../styles/Navbar.css"
+import { motion, AnimatePresence } from "framer-motion";
+import "../styles/Navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const mobileVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -20 },
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">⚽ Leo Club Nakuru</div>
-      <div className={`nav-links ${isOpen ? "open" : ""}`}>
+
+      <div className="desktop-links">
         <a href="#">Home</a>
         <a href="#">Register</a>
         <a href="#">Rules</a>
         <a href="#">Contact</a>
       </div>
+
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
       </div>
+
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className="mobile-links"
+            variants={mobileVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            transition={{ duration: 0.3 }}
+          >
+            <a href="#">Home</a>
+            <a href="#">Register</a>
+            <a href="#">Rules</a>
+            <a href="#">Contact</a>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };
