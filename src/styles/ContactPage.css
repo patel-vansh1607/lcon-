@@ -1,4 +1,11 @@
-/* Contact Form Container */
+@font-face {
+  font-family: 'HBold';
+  src: url(../fonts/HelveticaNeue\ Bold.ttf);
+}
+@font-face {
+  font-family: 'HReg';
+  src: url(../fonts/HelveticaNeueBoldItalic.otf);
+}
 .contact-form-container {
     background-color: #003366; /* Dark Blue background (Leo Club theme) */
     color: #fff;
@@ -9,14 +16,16 @@
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 60px;
-    margin-bottom: 60px
+    margin-bottom: 60px;
+    
   }
   
   h2 {
     font-family: 'Arial', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #ffd700; /* Leo Club gold color */
+    color: #ffd700; 
+    font-family: 'HBold', sans-serif;
   }
   
   /* Form Styling */

@@ -136,7 +136,7 @@ body {
 .faded-line {
   flex: 1;
   height: 5px;
-  background: linear-gradient(to right, transparent, #f4c542, transparent);
+  background: linear-gradient(to right, transparent, #333333, transparent);
 }
 .continue-section {
   max-width: 500px;
@@ -190,6 +190,13 @@ body {
 
 .continue-button:hover {
   background-color: #218838;
+}
+a {
+  color: #1A237E; 
+}
+a:hover {
+  color: #D4AF37; /* Lion Gold */
+  text-decoration: underline;
 }
 
 

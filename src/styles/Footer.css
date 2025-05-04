@@ -1,5 +1,13 @@
+@font-face {
+  font-family: 'HBold';
+  src: url(../fonts/HelveticaNeue\ Bold.ttf);
+}
+@font-face {
+  font-family: 'HReg';
+  src: url(../fonts/HelveticaNeueBoldItalic.otf);
+}
 .footer {
-    background-color: #003366; /* Dark blue background */
+    background-color: #003366;
     color: #fff;
     padding: 40px 20px;
     text-align: center;
@@ -22,16 +30,19 @@
   .footer-section h3, .footer-section h4 {
     color: #ffbc00; /* Gold color for headers */
     margin-bottom: 10px;
+    font-family: 'HBold', sans-serif;
   }
   
   .footer-section p {
     font-size: 14px;
     line-height: 1.5;
+    font-family: 'HReg', sans-serif;
   }
   
   .footer-section ul {
     list-style-type: none;
     padding: 0;
+    font-family: 'HReg', sans-serif;
   }
   
   .footer-section ul li {
@@ -60,6 +71,7 @@
     font-size: 14px;
     background-color: #002244; /* Slightly darker blue for the bottom */
     padding: 10px;
+    font-family: 'HReg', sans-serif;
   }
   
   .footer-bottom p {
