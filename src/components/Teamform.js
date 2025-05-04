@@ -2,6 +2,7 @@ import { useState } from "react";
 import PlayerForm from "../components/Playerform";
 import "../styles/Playerform.css"; // Ensure this is imported here too
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const TeamForm = () => {
   const [players, setPlayers] = useState(
@@ -90,6 +91,7 @@ const TeamForm = () => {
 
       <button type="submit" className="submit-btn">Submit Team</button>
       {success && <p className="success-msg">✅ Team submitted successfully!</p>}
+      <Footer />
     </form>
   );
 };
