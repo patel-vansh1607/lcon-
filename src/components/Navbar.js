@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">⚽ Leo Club Nakuru</div>
+      <div className="navbar-logo"> Leo Club Of Nakuru</div>
 
       <div className="desktop-links">
         <a href="/">Home</a>
