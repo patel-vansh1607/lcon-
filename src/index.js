@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import TeamForm from './components/Teamform';
+import TournamentPage from './components/Tournament';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router =  createBrowserRouter([
@@ -15,6 +16,10 @@ const router =  createBrowserRouter([
   {
     path: "/register",
     element: <TeamForm/>
+  },
+  {
+    path:"/rules",
+    element: <TournamentPage/>
   }
 ])
 

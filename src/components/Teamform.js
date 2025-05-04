@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PlayerForm from "../components/Playerform";
 import "../styles/Playerform.css"; // Ensure this is imported here too
+import Navbar from "./Navbar";
 
 const TeamForm = () => {
   const [players, setPlayers] = useState(
@@ -50,7 +51,9 @@ const TeamForm = () => {
   
 
   return (
+
     <form className="team-form" onSubmit={handleSubmit}>
+        <Navbar />
       <h2 className="main-title">🏆 Team Registration Form</h2>
 
       {players.map((player, index) => (

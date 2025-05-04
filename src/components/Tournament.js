@@ -2,6 +2,7 @@ import "../styles/Tournament.css";
 import { useEffect, useState } from "react";
 import leologo from "../images/logo-02.png"
 import lionslogo from "../images/logo-03.png"
+import Navbar from "./Navbar";
 
 const TournamentPage = () => {
     const [agreed, setAgreed] = useState(false);
@@ -19,7 +20,7 @@ useEffect(() => {
 }, [agreed])
   return (
     <>
-       {/*  <Navbar/> */}
+       <Navbar />
       <div className="main-div">
         <div className="main">
           <img className="img" src={leologo} alt="Leo Logo" />

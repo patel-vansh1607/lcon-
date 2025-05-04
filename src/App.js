@@ -7,9 +7,10 @@ import MainPage from './components/MainPage';
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <MainPage />
-     {/*  <Navbar />
-     {<TournamentPage />} */}
+
+      {/*{<TournamentPage />} */}
     </div>
   );
 }

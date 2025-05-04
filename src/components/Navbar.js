@@ -16,10 +16,10 @@ const Navbar = () => {
       <div className="navbar-logo">⚽ Leo Club Nakuru</div>
 
       <div className="desktop-links">
-        <a href="#">Home</a>
-        <a href="#">Register</a>
-        <a href="#">Rules</a>
-        <a href="#">Contact</a>
+        <a href="/">Home</a>
+        <a href="/rules">Rules</a>
+        <a href="/register">Team Registration</a>
+        <a href="/contact">Contact</a>
       </div>
 
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
@@ -40,8 +40,8 @@ const Navbar = () => {
           >
             <a href="/">Home</a>
             <a href="/register">Team Registration</a>
-            <a href="#">Rules</a>
-            <a href="#">Contact</a>
+            <a href="/rules">Rules</a>
+            <a href="/contact">Contact</a>
           </motion.div>
         )}
       </AnimatePresence>
