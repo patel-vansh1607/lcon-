@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import leologo from "../images/logo-02.png"
 import lionslogo from "../images/logo-03.png"
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const TournamentPage = () => {
     const [agreed, setAgreed] = useState(false);
@@ -169,6 +170,7 @@ useEffect(() => {
         </p>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
