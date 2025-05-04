@@ -38,8 +38,8 @@ const Navbar = () => {
             exit="exit"
             transition={{ duration: 0.3 }}
           >
-            <a href="#">Home</a>
-            <a href="#">Register</a>
+            <a href="/">Home</a>
+            <a href="/register">Team Registration</a>
             <a href="#">Rules</a>
             <a href="#">Contact</a>
           </motion.div>
