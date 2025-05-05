@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router =  createBrowserRouter([
   {
-    path: "/",
+    path: "/leo-football-tournament-2025",
     element: <App/>
   },
   {

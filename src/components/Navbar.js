@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="navbar-logo"> Leo Club Of Nakuru</div>
 
       <div className="desktop-links">
-        <a href="/">Rules</a>
+        <a href="leo-football-tournament-2025">Rules</a>
         <a href="/register">Team Registration</a>
         <a href="/contact">Contact</a>
       </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
             exit="exit"
             transition={{ duration: 0.3 }}
           >
-            <a href="/">Rules</a>
+            <a href="leo-football-tournament-2025">Rules</a>
             <a href="/register">Team Registration</a>
             <a href="/contact">Contact</a>
           </motion.div>
