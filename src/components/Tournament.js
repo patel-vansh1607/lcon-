@@ -157,20 +157,6 @@ useEffect(() => {
         </ul>
 
         </div>
-        <div className="continue-section">
-        <label className="checkbox-label">
-          <input
-            type="checkbox"
-            onChange={() => setAgreed(!agreed)}
-          />
-          <span>I have read and agree to the rules and regulations.</span>
-        </label>
-
-        <p className="continue-text">
-          To continue with the registration,
-          <button onClick={handleContinue} className="continue-button">CLICK HERE</button>
-        </p>
-      </div>
 
       </div>
       <Footer />
