@@ -17,8 +17,6 @@ const Navbar = () => {
 
       <div className="desktop-links">
         <a href="leo-football-tournament-2025">Rules</a>
-        <a href="/register">Team Registration</a>
-        <a href="/contact">Contact</a>
       </div>
 
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
@@ -38,8 +36,6 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
           >
             <a href="leo-football-tournament-2025">Rules</a>
-            <a href="/register">Team Registration</a>
-            <a href="/contact">Contact</a>
           </motion.div>
         )}
       </AnimatePresence>
