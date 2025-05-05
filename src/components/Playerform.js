@@ -3,15 +3,24 @@ import { motion } from "framer-motion";
 import "../styles/Playerform.css";
 
 const PlayerForm = ({ playerNumber, playerData, handleChange, isOpen, toggleOpen }) => {
+  const isCaptain = playerNumber === 1;
   const isCompleted =
     playerData.name && playerData.age && playerData.jersey && playerData.photo && playerData.birthCert;
 
   return (
     <div className="player-form">
       <div className="player-header">
-        <button type="button" onClick={toggleOpen} className="toggle-btn">
-          {isOpen ? "➖" : "➕"} {playerData.name || `Player ${playerNumber}`}
+        <button
+          type="button"
+          onClick={toggleOpen}
+          className={`toggle-btn ${isCaptain ? "captain-btn" : ""}`}
+        >
+          {isOpen ? "➖" : "➕"}{" "}
+          {isCaptain
+            ? `Captain${playerData.name ? ": " + playerData.name : ""}`
+            : playerData.name || `Player ${playerNumber}`}
         </button>
+
         <div className="status-group">
           {playerData.photo && (
             <img
@@ -32,6 +41,8 @@ const PlayerForm = ({ playerNumber, playerData, handleChange, isOpen, toggleOpen
           exit={{ opacity: 0, height: 0 }}
           transition={{ duration: 0.3 }}
         >
+          {isCaptain && <h3 className="captain-title">👑 Captain Registration</h3>}
+
           <label>
             Name:
             <input
@@ -65,6 +76,19 @@ const PlayerForm = ({ playerNumber, playerData, handleChange, isOpen, toggleOpen
             />
           </label>
 
+          {isCaptain && (
+            <label>
+              📱 WhatsApp Number:
+              <input
+                type="tel"
+                name="whatsapp"
+                placeholder="e.g. +1234567890"
+                value={playerData.whatsapp || ""}
+                onChange={(e) => handleChange(playerNumber - 1, e)}
+              />
+            </label>
+          )}
+
           <label>
             📸 Profile Photo:
             <input
@@ -91,3 +115,4 @@ const PlayerForm = ({ playerNumber, playerData, handleChange, isOpen, toggleOpen
 };
 
 export default PlayerForm;
+  

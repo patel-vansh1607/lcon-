@@ -1,16 +1,24 @@
 import { useState } from "react";
 import PlayerForm from "../components/Playerform";
-import "../styles/Playerform.css"; // Ensure this is imported here too
+import "../styles/Playerform.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 const TeamForm = () => {
   const [players, setPlayers] = useState(
-    Array(10).fill({ name: "", age: "", jersey: "", photo: null, birthCert: null })
+    Array(10).fill({
+      name: "",
+      age: "",
+      jersey: "",
+      photo: null,
+      birthCert: null,
+      whatsapp: "",
+    })
   );
-  
+
   const [openStates, setOpenStates] = useState(Array(10).fill(false));
   const [success, setSuccess] = useState(false);
+  const [teamName, setTeamName] = useState("");
 
   const toggleOpen = (index) => {
     const updated = [...openStates];
@@ -23,14 +31,18 @@ const TeamForm = () => {
     const updated = [...players];
     updated[index] = {
       ...updated[index],
-      [name]: name === "photo" ? files[0] : value,
+      [name]: files ? files[0] : value,
     };
     setPlayers(updated);
   };
 
+  const handleTeamNameChange = (e) => {
+    setTeamName(e.target.value);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     const isFormValid = players.every(
       (player) =>
         player.name.trim() &&
@@ -39,44 +51,56 @@ const TeamForm = () => {
         player.photo &&
         player.birthCert
     );
-  
-    if (!isFormValid) {
-      alert("⚠️ Please fill all fields and upload required files for every player before submitting.");
+
+    if (!teamName.trim()) {
+      alert("⚠️ Please enter your Team Name.");
       return;
     }
-  
+
+    if (!isFormValid) {
+      alert("⚠️ Please complete all fields and upload required files for each player.");
+      return;
+    }
+
     setSuccess(true);
-  
+
     const formData = new FormData();
-    // Append players data
+    formData.append("teamName", teamName);
     formData.append("players", JSON.stringify(players));
-  
-    // Append each player's files (photo and birth certificate)
-    players.forEach((player, index) => {
+
+    players.forEach((player) => {
       if (player.photo) formData.append("photo", player.photo);
       if (player.birthCert) formData.append("birthCert", player.birthCert);
     });
-  
+
     try {
       const response = await fetch("http://localhost:5000/register-team", {
         method: "POST",
         body: formData,
       });
-  
+
       const result = await response.json();
-      console.log(result); // Handle response from the backend
+      console.log(result);
     } catch (error) {
       console.error("Error submitting team:", error);
     }
   };
-  
-  
 
   return (
-
     <form className="team-form" onSubmit={handleSubmit}>
-        <Navbar />
+      <Navbar />
       <h2 className="main-title">🏆 Team Registration Form</h2>
+
+      <label className="team-name-label">
+        Team Name:
+        <input
+          type="text"
+          name="teamName"
+          placeholder="Enter team name"
+          value={teamName}
+          onChange={handleTeamNameChange}
+        />
+      </label>
 
       {players.map((player, index) => (
         <PlayerForm

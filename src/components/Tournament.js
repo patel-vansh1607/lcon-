@@ -45,7 +45,7 @@ useEffect(() => {
           </ul>
           <h2>2. Team Size</h2>
           <ul>
-            <li>Games will be payed with 7 fielders during the game, with a max of 3 substitutes.</li>
+            <li>Games will be played with 7 fielders during the game, with a max of 3 substitutes.</li>
             <li>Teams can have a maximum and munimum of 10 players <span className="spot-red">no more no less</span>.</li>
           </ul>
           <h2>3. Fouls & Misconduct</h2>
