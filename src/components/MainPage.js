@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Footer from "./Footer";
 
 
+
+
 const activities = [
   {
     title: "Beach Cleanup",
