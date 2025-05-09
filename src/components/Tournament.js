@@ -118,7 +118,21 @@ useEffect(() => {
           </ul>
           <h2>7. Tie-Breaking Rules</h2>
           <ul>
-            <li>TBD</li>
+            <li>Group Stage Matches</li>
+            <ul>
+              <li>Points: 3 for a win, 1 for a draw, 0 for a loss.</li>
+              <li>For draw no extra time, team will each get one point.</li>
+            </ul>
+            <li>Quater Finals & Semi Finals</li>
+              <ul>
+                <li>8 minutes extra time.</li>
+                <li>If game is a tie even after extra time, a penatly shoot-out will take place.</li>
+              </ul>
+              <li>Finals</li>
+              <ul>
+                <li>15 minutes extra time.</li>
+                <li>If game is a tie even after extra time, a penatly shoot-out will take place.</li>
+              </ul>
           </ul>
           <h2>8. Uniform</h2>
         <ul>
@@ -138,6 +152,42 @@ useEffect(() => {
           <li>Head injuries will follow a mandatory concussion protocol — players must be cleared by medical staff before returning.</li>
           <li>Bleeding players must leave the pitch and may only return once bleeding has stopped and the referee permits.</li>
           <li>In case of serious injury, play will be stopped immediately and medical help will be called.</li>
+        </ul>
+        <h2>11. Sportsmanship</h2>
+        <li>Zero Tolerance for Racism</li>
+        <ul>
+          <li>Any racial comments, gestures, or insults will result in an immediate red card.</li>
+          <li>Further disciplinary actions may include suspension from the tournament.</li>
+        </ul>
+
+        <li>No Fighting</li>
+        <ul>
+          <li>Any player involved in a fight will receive a red card immediately.</li>
+          <li>Both players may be suspended from future matches depending on severity.</li>
+        </ul>
+
+        <li>Respect for Officials</li>
+        <ul>
+          <li>Abusive language or behavior toward referees or staff is not allowed.</li>
+          <li>Can result in yellow or red card based on the situation.</li>
+        </ul>
+
+        <li>Respect Opponents</li>
+        <ul>
+          <li>No mocking, taunting, or provoking opponents.</li>
+          <li>First offense: yellow card. Repeated: red card.</li>
+        </ul>
+
+        <li>Fair Play</li>
+        <ul>
+          <li>No diving, time-wasting, or dishonest tactics.</li>
+          <li>Play the game with integrity.</li>
+        </ul>
+
+        <li>Team & Fan Conduct</li>
+        <ul>
+          <li>Captains are responsible for players and fans.</li>
+          <li>Fan misconduct may result in team warnings or match suspension.</li>
         </ul>
         <div className="faded-line"></div>
         <ul>
