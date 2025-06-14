@@ -201,7 +201,7 @@ useEffect(() => {
               rel="noopener noreferrer"
               style={{ color: "#25D366", textDecoration: "underline" }}
             >
-              Contact the Organizer
+              Contact the Offical
             </a>.
           </li>
         </ul>
