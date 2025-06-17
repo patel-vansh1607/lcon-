@@ -66,7 +66,7 @@ useEffect(() => {
               <li>Dangerous play (e.g., high foot)</li>
               <li>Impediment without contact</li>
               <li>Goalkeeper holding the ball for over 6 seconds</li>
-              <li>Goalkeeper touching the ball after a teammate’s deliberate back-pass</li>
+              <li>Goalkeeper directly handling (holding) the ball after a teammates deliberate backpass</li>
             </ul>
           </li>
           <li>
