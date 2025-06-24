@@ -37,7 +37,7 @@ useEffect(() => {
           <h2>📜 Rules & Regulations</h2><br></br>
           <h2>1. Gameplay</h2>
           <ul>
-            <li>Group stage matches will be played for 15 minutes (full game duration).</li>
+            <li>Group stage matches will be played for 20 minutes (10 each half).</li>
             <li>16 teams will participate, divided into 4 groups of 4 teams each.</li>
             <li>The top 2 teams from each group will qualify for the next stage.</li>
             <li>All game schedules, stats, and scores will be updated on this app: <a href="https://play.google.com/store/apps/details?id=il.talent.winner&hl=en" target="_blank" rel="noopener noreferrer">Winner - Tournament Maker App   </a>.<br></br></li>
