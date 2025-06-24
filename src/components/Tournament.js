@@ -29,9 +29,11 @@ useEffect(() => {
           <img className="img" src={lionslogo} alt="Lions Logo" />
         </div>
         <h1 className="tournament-title">SOCCER CUP <br></br> <span className="span2">WHERE TALENT MEETS OPPORTUNITY</span></h1>
-        
-
+      
         <div className="rules-section">
+          <div style={{ color: 'red', fontWeight: 'bold', fontSize: '18px', marginTop: '10px' }}>
+    ⚠️ TEAMS TO BE REGISTERED BY <u>25TH JULY 2025</u> EVENING <u>WEDNESDAY</u>
+  </div>
           <h2>📜 Rules & Regulations</h2><br></br>
           <h2>1. Gameplay</h2>
           <ul>
@@ -94,15 +96,7 @@ useEffect(() => {
           </li>
         </ul>
         <h2>4. Offside Rules</h2>
-          <ul>
-          <li>
-            <strong>A player is offside if : </strong> 
-            <ul>
-              <li>They're nearer to the opponent's goal than both the ball and the second-last defender when the ball is played to them</li>
-              <li>Offside = <strong>Indirect Free Kick</strong> to opponent.</li>
-            </ul>
-          </li>
-        </ul>
+          <br></br>NO OFFSIDE <br></br>
         <h2>6. Restarts & Ball Out of Play</h2>
           <ul>
             <li><strong>Kick-off:</strong> After goals or at the start of each half.</li>
